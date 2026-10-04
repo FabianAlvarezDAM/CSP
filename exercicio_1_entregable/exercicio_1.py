@@ -1,4 +1,5 @@
 from faker import Faker
+import random
 
 fake = Faker()
 usuarios = []
@@ -19,4 +20,7 @@ while contador_usuarios < 15:
     contador_usuarios +=1
 
 print(usuarios)
+
+usuario_seleccionado = random.choice(usuarios)
+print(f"O usuario chamado {usuario_seleccionado['nome']} foi o afortunado!")
 
